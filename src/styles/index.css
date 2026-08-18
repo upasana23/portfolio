@@ -1,0 +1,233 @@
+/* ============================================
+   UPASANA MAJUMDER — PORTFOLIO DESIGN SYSTEM
+   Dark Editorial Theme (Desktop + Mobile)
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600&family=Inter:wght@300;400;500;600;700;800;900&family=Caveat:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* Color Palette — High Contrast Dark Mode */
+  --color-bg:           #050505; /* Pitch Black */
+  --color-bg-alt:       #0A0A0C; /* Very Dark Grey */
+  --color-bg-card:      #121214; /* Charcoal Card */
+  --color-bg-card-alt:  #18181C; /* Focus Card */
+  
+  --color-primary:      #38BDF8; /* Sky Blue */
+  --color-primary-soft: rgba(56, 189, 248, 0.1);
+  --color-primary-deep: #0284C7;
+  
+  --color-sky:          #38BDF8;
+  --color-cyan:         #22D3EE;
+  --color-indigo:       #818CF8;
+  --color-violet:       #A78BFA;
+  --color-teal:         #2DD4BF;
+  --color-rose:         #FB7185;
+  
+  --color-text:         #FFFFFF; /* Pure White */
+  --color-text-light:   #E2E8F0; /* Off-White */
+  --color-text-muted:   #71717A; /* Muted Grey */
+  
+  --color-border:       #1E1E24; /* Subtle line grids */
+  --color-border-focus: #3F3F46;
+  
+  /* Typography */
+  --font-display:    'Inter', sans-serif; /* Clean high-contrast blocky sans */
+  --font-serif:      'Playfair Display', Georgia, serif;
+  --font-body:       'Inter', -apple-system, sans-serif;
+  --font-handwritten:'Caveat', cursive;
+  --font-mono:       'JetBrains Mono', monospace;
+  
+  /* Font Sizes */
+  --text-xs:    11px;
+  --text-sm:    13px;
+  --text-base:  15px;
+  --text-lg:    18px;
+  --text-xl:    22px;
+  --text-2xl:   32px;
+  --text-3xl:   48px;
+  --text-4xl:   64px;
+  
+  /* Spacing */
+  --space-xs:   0.25rem;
+  --space-sm:   0.5rem;
+  --space-md:   1rem;
+  --space-lg:   1.5rem;
+  --space-xl:   2rem;
+  --space-2xl:  3.5rem;
+  --space-3xl:  5rem;
+  
+  /* Border Radius */
+  --radius-sm:  4px;
+  --radius-md:  8px;
+  --radius-lg:  16px;
+  --radius-xl:  24px;
+  --radius-full:9999px;
+  
+  /* Transitions */
+  --transition-fast:   150ms ease;
+  --transition-base:   250ms ease;
+  --transition-slow:   450ms cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Reset */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--color-bg);
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--color-text-light);
+  background-color: var(--color-bg);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Responsive Root Wrapper: Full widescreen support, styled as a premium web app */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  padding-bottom: 0; /* Handled responsively */
+}
+
+/* Common Layout Utilities */
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.container-wide {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section {
+  padding: var(--space-3xl) 0;
+  position: relative;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.section-alt {
+  background-color: var(--color-bg-alt);
+}
+
+/* Text Formatting */
+.heading-gradient {
+  background: linear-gradient(135deg, #FFFFFF, var(--color-sky), #818CF8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.75rem;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all var(--transition-base);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  border: 1px solid var(--color-text);
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: var(--color-text);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-text);
+  border: 1px solid var(--color-border-focus);
+}
+
+.btn-outline:hover {
+  border-color: var(--color-text);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.btn-ghost {
+  color: var(--color-text-muted);
+  background: transparent;
+  border: none;
+}
+
+.btn-ghost:hover {
+  color: var(--color-text);
+}
+
+/* Scroll Indicators / Ribbons */
+.ticker-tape {
+  width: 100%;
+  overflow: hidden;
+  background: var(--color-text);
+  color: var(--color-bg);
+  padding: 0.75rem 0;
+  font-family: var(--font-display);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  display: flex;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.ticker-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: ticker 25s linear infinite;
+}
+
+@keyframes ticker {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-100%, 0, 0); }
+}
+
+/* Responsive Bottom Nav for Mobile / Top Nav for Widescreen */
+@media (min-width: 769px) {
+  #root {
+    padding-top: 72px; /* space for top header */
+  }
+}
+
+@media (max-width: 768px) {
+  #root {
+    padding-bottom: 64px; /* space for bottom navigation bar */
+  }
+  
+  .container, .container-wide {
+    padding: 0 1.25rem;
+  }
+  
+  .section {
+    padding: var(--space-2xl) 0;
+  }
+}
