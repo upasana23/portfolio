@@ -16,6 +16,8 @@ export const PROJECTS_DATA = [
     description: 'A decentralized environmental verification platform on OP Stack L3 that tokenizes real-world climate actions into verifiable carbon credits through blockchain-based validation and governance.',
     problem: 'Climate action verification is centralized, opaque, and prone to greenwashing — making it hard to trust carbon credit systems.',
     solution: 'Built a transparent, blockchain-based platform that tokenizes verified climate actions into on-chain carbon credits with decentralized governance.',
+    award: '🥉 3rd Place',
+    awardDetails: 'Podium Finish — 3rd Place',
     features: [
       'Tokenized carbon credits via smart contracts',
       'On-chain governance and verification',
@@ -71,6 +73,8 @@ export const PROJECTS_DATA = [
     description: 'A full-stack student marketplace enabling campus-based buying, selling, renting, trading, auctions, and real-time messaging with AI-powered product verification.',
     problem: 'Students lack a dedicated, secure platform for campus commerce.',
     solution: 'Comprehensive campus commerce platform with AI verification, live bidding, and chat.',
+    award: '🥉 3rd Place',
+    awardDetails: 'Podium Finish — 3rd Place',
     features: [
       'AI product verification (Gemini)',
       'Real-time messaging via Socket.IO',
@@ -89,6 +93,8 @@ export const PROJECTS_DATA = [
     description: 'An autonomous off-road terrain intelligence system that ingests raw imagery and outputs semantic terrain understanding using a fine-tuned SegFormer-B0 transformer model, classifying every pixel into 10 terrain categories with GO/SLOW/STOP navigation commands.',
     problem: 'Autonomous off-road vehicles struggle with real-time traversability decisions.',
     solution: 'Fine-tuned SegFormer-B0 model classifying terrain pixels with synthetic Falcon twin data.',
+    award: '⭐ Top 5',
+    awardDetails: 'Hackathon Top 5 Finalist',
     features: [
       '10-class segmentation & traversability scoring',
       'Video frame & webcam inference pipelines',
@@ -145,6 +151,7 @@ export const PERSONAL = {
   email: 'upasanamajumder2006@gmail.com',
   github: 'https://github.com/upasana23',
   linkedin: 'https://www.linkedin.com/in/upasana-majumder-5a9264287/',
+  resume: 'https://drive.google.com/file/d/1WJkiy85S8JefRiMriLFyGC6oLUR-nyvg/view?usp=sharing',
   location: 'Kolkata, India',
   cgpa: '9.13',
   institution: 'Heritage Institute of Technology, Kolkata',
@@ -154,8 +161,10 @@ export const PERSONAL = {
 
 export const COURSEWORK = [
   'Data Structures & Algorithms',
+  'Operating Systems',
   'Database Management Systems',
   'Computer Architecture',
+  'Image Processing',
   'Data Mining',
   'Machine Learning',
   'Mathematics & Statistics',

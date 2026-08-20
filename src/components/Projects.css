@@ -136,6 +136,41 @@
   letter-spacing: -0.5px;
 }
 
+.td-title-text {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.td-award-chip {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.td-award-chip.podium,
+.td-award-chip:not(.top5) {
+  background: linear-gradient(135deg, #FFE600 0%, #FF9900 100%);
+  color: #000000;
+  border: 1px solid #FFF000;
+  box-shadow: 0 0 12px rgba(255, 230, 0, 0.4);
+}
+
+.td-award-chip.top5 {
+  background: linear-gradient(135deg, #00F2FE 0%, #4FACFE 100%);
+  color: #000000;
+  border: 1px solid #00F2FE;
+  box-shadow: 0 0 12px rgba(0, 242, 254, 0.4);
+}
+
 .td-tagline {
   font-family: var(--font-mono);
   font-size: 11px;
@@ -174,6 +209,15 @@
   top: 100px;
 }
 
+.panel-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
 .panel-category-badge {
   display: inline-block;
   font-family: var(--font-mono);
@@ -183,8 +227,47 @@
   color: var(--color-primary);
   padding: 3px 10px;
   border-radius: var(--radius-sm);
-  margin-bottom: 1.5rem;
   letter-spacing: 0.5px;
+}
+
+.panel-award-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 800;
+  padding: 5px 12px;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.panel-award-badge.podium,
+.panel-award-badge:not(.top5) {
+  background: linear-gradient(135deg, #FFE600 0%, #FF9900 100%);
+  color: #050505;
+  border: 1px solid #FFF000;
+  box-shadow: 0 0 18px rgba(255, 230, 0, 0.5);
+  animation: award-pulse 3s infinite alternate ease-in-out;
+}
+
+.panel-award-badge.top5 {
+  background: linear-gradient(135deg, #00F2FE 0%, #4FACFE 100%);
+  color: #050505;
+  border: 1px solid #00F2FE;
+  box-shadow: 0 0 18px rgba(0, 242, 254, 0.5);
+  animation: award-pulse-cyan 3s infinite alternate ease-in-out;
+}
+
+@keyframes award-pulse {
+  0% { box-shadow: 0 0 12px rgba(255, 230, 0, 0.4); }
+  100% { box-shadow: 0 0 24px rgba(255, 230, 0, 0.8); }
+}
+
+@keyframes award-pulse-cyan {
+  0% { box-shadow: 0 0 12px rgba(0, 242, 254, 0.4); }
+  100% { box-shadow: 0 0 24px rgba(0, 242, 254, 0.8); }
 }
 
 .panel-title {

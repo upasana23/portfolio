@@ -410,6 +410,25 @@
   .about-content {
     align-items: center;
     text-align: center;
+    width: 100%;
+  }
+  .cyber-hud-matrix {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .hud-matrix-header {
+    justify-content: center;
+    text-align: center;
+  }
+  .hud-title {
+    flex-grow: 0;
+  }
+  .hud-row {
+    align-items: center;
+    text-align: center;
+  }
+  .hud-chips {
+    justify-content: center;
   }
   .about-visual {
     order: -1;
@@ -454,6 +473,29 @@
   }
   .about-labels {
     align-items: flex-start;
+  }
+  .cyber-hud-matrix {
+    width: 100%;
+    max-width: 100%;
+    padding: 1.25rem 1rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .hud-matrix-header {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .hud-row {
+    align-items: center;
+    text-align: center;
+  }
+  .hud-chips {
+    justify-content: center;
+  }
+  .hud-value {
+    word-break: break-word;
+    font-size: 11px;
   }
   .process-img {
     height: 200px;

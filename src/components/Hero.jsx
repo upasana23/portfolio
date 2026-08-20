@@ -1,5 +1,5 @@
 import { PERSONAL } from '../data/portfolio';
-import { GitHubIcon } from './Navbar';
+import { GitHubIcon, ResumeIcon } from './Navbar';
 import './Hero.css';
 
 export default function Hero() {
@@ -68,12 +68,20 @@ export default function Hero() {
                 Explore Projects ✦
               </button>
               <a 
+                href={PERSONAL.resume}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-accent"
+              >
+                <ResumeIcon size={14} /> Resume
+              </a>
+              <a 
                 href={PERSONAL.github} 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="btn btn-outline"
               >
-                <GitHubIcon size={14} /> GitHub Profile
+                <GitHubIcon size={14} /> GitHub
               </a>
             </div>
           </div>

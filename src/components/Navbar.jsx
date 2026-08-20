@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { PERSONAL } from '../data/portfolio';
 import './Navbar.css';
 
 export default function Navbar() {
@@ -35,11 +36,11 @@ export default function Navbar() {
   };
 
   const menuItems = [
-    { id: 'about', label: 'About', icon: '👤' },
-    { id: 'education', label: 'Education', icon: '📚' },
-    { id: 'skills', label: 'Skills', icon: '🧠' },
-    { id: 'projects', label: 'Projects', icon: '💼' },
-    { id: 'contact', label: 'Contact', icon: '✉️' },
+    { id: 'about', label: 'About', icon: '/profile.png' },
+    { id: 'education', label: 'Education', icon: '/graduate-hat.png' },
+    { id: 'skills', label: 'Skills', icon: '/skill-development.png' },
+    { id: 'projects', label: 'Projects', icon: '/project-management.png' },
+    { id: 'contact', label: 'Contact', icon: '/contact-mail.png' },
   ];
 
   return (
@@ -61,13 +62,22 @@ export default function Navbar() {
             </button>
           ))}
           <a
-            href="https://github.com/upasana23"
+            href={PERSONAL.github}
             target="_blank"
             rel="noopener noreferrer"
             className="desktop-github-btn"
           >
             <GitHubIcon size={14} />
             GitHub
+          </a>
+          <a
+            href={PERSONAL.resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="desktop-resume-btn"
+          >
+            <ResumeIcon size={14} />
+            Resume
           </a>
         </nav>
       </header>
@@ -78,7 +88,7 @@ export default function Navbar() {
           className={`tab-item ${activeSection === 'hero' ? 'active' : ''}`}
           onClick={() => scrollTo('hero')}
         >
-          <span className="tab-icon">🏠</span>
+          <img src="/home.png" alt="Home" className="tab-icon-img" />
           <span className="tab-label">Home</span>
         </button>
 
@@ -88,12 +98,34 @@ export default function Navbar() {
             className={`tab-item ${activeSection === item.id || (item.id === 'about' && activeSection === 'education') ? 'active' : ''}`}
             onClick={() => scrollTo(item.id)}
           >
-            <span className="tab-icon">{item.icon}</span>
+            <img src={item.icon} alt={item.label} className="tab-icon-img" />
             <span className="tab-label">{item.label}</span>
           </button>
         ))}
+
+        <a
+          href={PERSONAL.resume}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="tab-item resume-tab"
+        >
+          <img src="/resume.png" alt="Resume" className="tab-icon-img" />
+          <span className="tab-label">Resume</span>
+        </a>
       </nav>
     </>
+  );
+}
+
+export function ResumeIcon({ size = 16 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+      <polyline points="14 2 14 8 20 8"></polyline>
+      <line x1="16" y1="13" x2="8" y2="13"></line>
+      <line x1="16" y1="17" x2="8" y2="17"></line>
+      <polyline points="10 9 9 9 8 9"></polyline>
+    </svg>
   );
 }
 

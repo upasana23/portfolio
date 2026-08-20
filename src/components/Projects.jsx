@@ -75,7 +75,14 @@ export default function Projects() {
                   >
                     <span className="td-col td-num">{num}</span>
                     <span className="td-col td-name">
-                      {project.name}
+                      <span className="td-title-text">
+                        {project.name}
+                        {project.award && (
+                          <span className={`td-award-chip ${project.awardType || 'podium'}`}>
+                            {project.award}
+                          </span>
+                        )}
+                      </span>
                       <span className="td-tagline">{project.tagline}</span>
                     </span>
                     <span className="td-col td-category">
@@ -97,8 +104,15 @@ export default function Projects() {
             style={{ scrollMarginTop: '100px' }} // Spacing for header navigation
           >
             <div className="panel-inner">
-              <div className="panel-category-badge">
-                {activeProject.categoryLabel}
+              <div className="panel-top-bar">
+                <div className="panel-category-badge">
+                  {activeProject.categoryLabel}
+                </div>
+                {activeProject.award && (
+                  <div className={`panel-award-badge ${activeProject.awardType || 'podium'}`}>
+                    🏆 {activeProject.awardDetails || activeProject.award}
+                  </div>
+                )}
               </div>
 
               <h3 className="panel-title">{activeProject.name}</h3>
