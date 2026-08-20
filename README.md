@@ -1,102 +1,94 @@
 # Upasana Majumder — Portfolio
 
-A dark, editorial-style personal portfolio built with **React 19** and **Vite**. Designed to showcase work at the intersection of AI/ML, Web3, and full-stack development.
+# 👋 Hey, I'm Upasana Majumder
 
-![React](https://img.shields.io/badge/React-19.2-61DAFB?logo=react)
-![Vite](https://img.shields.io/badge/Vite-8.2-646CFF?logo=vite)
-![License](https://img.shields.io/badge/license-MIT-green)
+### `AI/ML × WEB3 × FULL-STACK BUILDER`
 
----
+> **“The best way to predict the future is to invent it.”**
+> — Alan Kay
 
-## Sections
+I'm a Computer Science Engineering student exploring the intersection of **Artificial Intelligence, Web3 and full-stack development**. I like taking ideas from *“what if?”* to something that actually works.
 
-| Section | Description |
-|---------|-------------|
-| **Hero** | Editorial header with status labels, visual frame, and ticker tape |
-| **About** | Bio + cyberpunk HUD status matrix |
-| **Education** | Academic background and coursework |
-| **Skills** | Categorized skill matrix across Languages, Frontend, Backend, AI/ML, and Web3 |
-| **Projects** | Featured projects with problem/solution breakdowns |
-| **Contact** | Connect via GitHub, Email, or LinkedIn |
+🏆 **3× Hackathon Winner / Podium**
+🧠 **AI/ML Explorer**
+⛓️ **Web3 & Blockchain Builder**
+💻 **Full-Stack Developer**
 
 ---
 
-## Tech Stack
+## 🚀 What I'm Building
 
-**Frontend**
-- React 19
-- Vite
-- CSS (custom design system, no framework)
+🔗 **Gaia / ARX Protocol** — Decentralized environmental verification & Proof of Impact
 
-**Key Technologies Highlighted**
-- **AI/ML:** Python, PyTorch, TensorFlow, YOLO, OpenCV, Gemini AI
-- **Web3:** Solidity, Smart Contracts, Ethereum, OP Stack, IPFS
-- **Full-Stack:** Next.js, React.js, TypeScript, Node.js, Express, PostgreSQL, MongoDB
+💰 **InvoChain** — RWA-based decentralized invoice financing
 
----
+🤖 **Leash** — AI-agent permissions & account abstraction
 
-## Getting Started
+🧠 **AI Fake Review Detection** — ML-powered review authenticity system
 
-```bash
-# Install dependencies
-npm install
+👁️ **Emergency Situation Classifier** — Computer vision for real-world emergency detection
 
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Preview production build
-npm run preview
-
-# Run linter
-npm run lint
-```
+🌐 **Student Platforms & Full-Stack Experiments** — Building practical products around real problems
 
 ---
 
-## Project Structure
+## 🧠 Currently Exploring
 
-```
-src/
-├── components/
-│   ├── Hero.jsx / Hero.css
-│   ├── About.jsx / About.css
-│   ├── Education.jsx / Education.css
-│   ├── Skills.jsx / Skills.css
-│   ├── Projects.jsx / Projects.css
-│   ├── Contact.jsx / Contact.css
-│   └── Navbar.jsx / Navbar.css
-├── data/
-│   └── portfolio.js          # Centralized project, skills, and personal data
-├── styles/
-│   └── index.css             # Design system tokens (colors, fonts, spacing)
-├── assets/
-│   └── ...
-├── App.jsx
-└── main.jsx
-```
+`AI Agents` `Account Abstraction` `DeFi` `RWA`
+`Machine Learning` `Computer Vision` `Smart Contracts`
+`Next.js` `TypeScript` `Solidity` `Python`
 
 ---
 
-## Customization
+## ⚡ My Philosophy
 
-All content lives in **`src/data/portfolio.js`**. Update the following exports to personalize:
+I don't want to just learn technologies.
 
-- `PERSONAL` — name, email, GitHub, LinkedIn, location, institution
-- `PROJECTS_DATA` — project cards with descriptions, tech stacks, and links
-- `SKILLS_DATA` — categorized skills and icons
-- `COURSEWORK` — relevant coursework list
+**I want to build with them.**
 
-Design tokens (colors, typography, spacing) are defined as CSS custom properties in **`src/styles/index.css`**.
+Every project is an experiment, every bug is a lesson, and every hackathon is an excuse to try something slightly crazier than the last.
 
 ---
 
-## Contact
+## 🛠️ Tech Stack
 
-- **GitHub:** [@upasana23](https://github.com/upasana23)
-- **LinkedIn:** [linkedin.com/in/upasana-majumder-5a9264287](https://www.linkedin.com/in/upasana-majumder-5a9264287/)
+**Languages:**
+C • Java • Python • JavaScript • TypeScript • SQL • Solidity
+
+**Frontend:**
+React • Next.js • Tailwind CSS • shadcn/ui
+
+**Backend:**
+Node.js • Express • PostgreSQL • Prisma • Supabase
+
+**AI/ML:**
+NumPy • Pandas • Scikit-learn • OpenCV • PyTorch • TensorFlow • YOLO
+
+**Web3:**
+Solidity • Smart Contracts • Ethereum • CELO • IPFS • ERC-20 • ERC-1155 • Account Abstraction
+
+---
+
+## 🏆 Hackathons & Achievements
+
+**3× Hackathon Winner / Podium**
+
+Built and presented projects across **Web3, AI/ML and full-stack development**, with a particular interest in solving real-world problems through emerging technology.
+
+---
+
+## 📊 GitHub
+
+<!-- Add GitHub stats widgets here -->
+
+**Repositories • Contributions • Commits • Languages • Stars**
+
+---
+
+## 🌐 Connect With Me
+
+[GitHub](https://github.com/upasana23) • LinkedIn • Portfolio • Email
+
 - **Email:** upasanamajumder2006@gmail.com
 
 ---
